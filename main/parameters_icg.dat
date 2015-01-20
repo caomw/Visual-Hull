@@ -1,0 +1,71 @@
+# input !ATTENTION unit is m
+input_images
+G:\\experiments\\Chap\\View%d\\out%04d.jpg
+
+# world frame --> image frame
+P0
+-669.8, 752.1, -321, 4709.9 
+137.6, 24.3, -1019.3, 2134.5
+-0.8, -0.2, -0.6, 6.5
+
+P1
+-610.2, -792.1, -224.7, 1244.1
+-178.7, 92.8, -1000.7, 2326.6
+0.3, -0.7, -0.6, 4.1
+
+P2
+275.2, -927.4, -346.5, 1589.8
+-191, 14.8, -989, 2022.9
+0.7, -0.1, -0.7, 5.2
+
+P3
+946.1, 32.7, -401.5, 2108.7
+-138.2, -133.9, -976, 2151.3
+0.3, 0.7, -0.6, 5.3
+
+# virtual frame --> world frame
+T
+1, 0, 0, -4.29
+0, -1, 0, 0.8937
+0, 0, 1, 0
+0, 0, 0, 1
+
+# image processing
+rows
+768
+
+columns
+1024
+
+# visual space and real space
+# basically, they have the same names in my code
+roomsize_x
+10
+
+roomsize_y
+6
+
+roomsize_z
+3.5
+
+thread_x
+2
+
+thread_y
+2
+
+thread_z
+64
+
+block_x
+100
+
+block_y
+80
+
+# localization
+gaussian_kernel
+11
+
+threshold
+10

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="head">
+      <UniqueIdentifier>{5b8f9bc7-161d-4aa3-8770-fb0c9c097c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{afd71793-6af0-4329-8893-624221a65807}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data.cuh">
+      <Filter>head</Filter>
+    </None>
+    <None Include="parse_parameters.cuh">
+      <Filter>head</Filter>
+    </None>
+    <None Include="visual_hull.cuh">
+      <Filter>head</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="main.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="visual_hull.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+    <CudaCompile Include="parse_parameters.cu">
+      <Filter>source</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
