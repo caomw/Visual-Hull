@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Multi-view pedestrian tracking : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Multi-view pedestrian tracking</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/zhaozj89/Visual-Hull">View on GitHub</a>
+
+          <h1 id="project_title">Multi-view pedestrian tracking</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/zhaozj89/Visual-Hull/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/zhaozj89/Visual-Hull/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a id="abstract" class="anchor" href="#abstract" aria-hidden="true"><span class="octicon octicon-link"></span></a>Abstract</h2>
+
+<p>Four cameras are mounted on four corners of a room, as Figure 1 shows. The pipeline is: </p>
+
+<ol>
+<li><p>four cameras capture images simultaneously by <a href="http://www.boost.org/doc/libs/1_58_0/doc/html/thread.html">boost thread library</a>;</p></li>
+<li><p>motion detection (GPU MOG2) is utilized to get the binary images of the four views;</p></li>
+<li><p><strong>Visual-Hull</strong> is utilized to get the visual hull of the moving pedestrian;</p></li>
+<li><p>the ground positions are got by projecting the visual hull into the ground to get the projected image, and then segmenting the projected image by a pre-set threshold, and finally finding centers of the contours, see Figure 2 for an intuitional understanding;</p></li>
+<li><p><strong>Particle-Filter</strong> is utilized to track every individual object, and a process called trajectory management (data association) is utilized to track multi-objects.</p></li>
+</ol>
+
+<h2>
+<a id="results" class="anchor" href="#results" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results</h2>
+
+<p>coming soon</p>
+
+<h2>
+<a id="comments" class="anchor" href="#comments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comments</h2>
+
+<p>coming soon</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Multi-view pedestrian tracking maintained by <a href="https://github.com/zhaozj89">zhaozj89</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-62097831-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
