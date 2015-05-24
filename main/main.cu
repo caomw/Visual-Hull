@@ -32,7 +32,7 @@ int main(void){
 	}
 
 	/// 1. parameters
-	string para_file_name = "parameters.dat";
+	string para_file_name = "parameters_Fview2_small.dat";
 	Parameters para;
 	para.parse(para_file_name);
 
@@ -48,9 +48,9 @@ int main(void){
 		return 1;
 	}
 
-	int k = 2; /// start from the 2nd frame
+	int k = 0; /// start from the 2nd frame
 	if(store == false) namedWindow("color", 0);
-	ofstream out("wpositions.csv");
+	ofstream out("wpositions.txt");
 	for(;;){
 		cout<<"processing "<<k<<"th frames... ..."<<endl;
 
@@ -78,8 +78,8 @@ int main(void){
 		}
 		else{
 			vector<Point2f> wpositions = visual_hull.transform2world(positions);
-			out<<k;
-			for(int i = 0; i < wpositions.size(); ++i) out<<","<<wpositions[i].x<<","<<wpositions[i].y;
+			out<<k<<" "<<wpositions.size();
+			for(int i = 0; i < wpositions.size(); ++i) out<<" "<<wpositions[i].x<<" "<<wpositions[i].y;
 			out<<endl;
 		}
 

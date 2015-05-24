@@ -1,0 +1,72 @@
+# input !ATTENTION unit is mm
+input_images
+E:\\last\\small\\data\\Fview1_small\\gamma_src\\smsom\\filtered\\view%d\\img%06d.jpg
+
+# world frame --> image frame
+P0
+   5.6250639e+02  -1.2672626e+02  -7.7979193e+01   1.0943764e+06
+   9.2532960e+01   4.7889300e+01  -4.9948494e+02   1.0886363e+06
+   7.0247130e-01   6.3890567e-01  -3.1358192e-01   2.7268962e+03
+
+P1
+  -7.8897063e+01  -5.5577814e+02  -1.1834471e+02   8.8873796e+05
+   6.1602603e+01  -3.5447728e+01  -5.2145586e+02   1.1811754e+06
+   7.4247674e-01  -5.6995878e-01  -3.5195920e-01   3.1541812e+03
+
+P2
+  -4.4802291e+02   3.0816711e+02  -2.0141638e+02   9.9371343e+05
+   5.3365925e+01   1.8828377e+00  -5.1962010e+02   8.9072600e+05
+  -7.1152613e-01  -3.8131934e-01  -5.9019160e-01   3.0771389e+03
+
+
+P3
+   5.7416974e+01   5.3676173e+02  -1.6524296e+02   1.0212368e+06
+   1.6961210e+01  -4.4626333e+00  -5.3046783e+02   9.3768192e+05
+  -6.9252337e-01   4.5038819e-01  -5.6352628e-01   3.2177951e+03
+
+# virtual frame --> world frame
+T
+1, 0, 0, -3500
+0, -1, 0, 2500
+0, 0, 1, 0
+0, 0, 0, 1
+
+# image processing
+rows
+480
+
+columns
+640
+
+# visual space and real space
+# basically, they have the same names in my code
+roomsize_x
+8000
+
+roomsize_y
+6000
+
+roomsize_z
+2000
+
+thread_x
+2
+
+thread_y
+2
+
+thread_z
+64
+
+block_x
+100
+
+block_y
+80
+
+# localization
+gaussian_kernel
+11
+
+threshold
+10

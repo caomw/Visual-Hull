@@ -26,16 +26,7 @@ public:
 		vector<Mat> bw_imgs;
 		Mat img;
 		for(int i = 0; i < cam_nbr; ++i){
-			/// ad hoc
-			if(param == "parameters_icg.dat") 
-				sprintf(temp, image_name.c_str(), i, k);
-			else if(param == "parameters.dat") 
-				sprintf(temp, image_name.c_str(), i, i, k);
-			else if(param == "parameters_fview.dat") 
-				sprintf(temp, image_name.c_str(), i, k);
-			else{
-				cerr<<"parameters' file's error"<<endl; exit(1);
-			}
+			sprintf(temp, image_name.c_str(), i, k);
 			img = imread(temp, 0);
 			if(img.empty()) {cerr<<"There are no images ... ...\n"; exit(1);}
 			bw_imgs.push_back(img);

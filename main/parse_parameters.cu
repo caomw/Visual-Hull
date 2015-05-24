@@ -39,7 +39,7 @@ void Parameters::parse(string file_name){
 			cout<<"P"<<nbr<<" is: "<<endl;
 			for(int i = 0; i < 3; ++i){
 				infile.getline(line, 100, '\n');
-				sscanf(line, "%g, %g, %g, %g", &P[nbr][0+4*i], &P[nbr][1+4*i], &P[nbr][2+4*i], &P[nbr][3+4*i]);
+				sscanf(line, "%g %g %g %g", &P[nbr][0+4*i], &P[nbr][1+4*i], &P[nbr][2+4*i], &P[nbr][3+4*i]);
 				cout<<"["<<P[nbr][0+4*i]<<", "<<P[nbr][1+4*i]<<", "<<P[nbr][2+4*i]<<", "<<P[nbr][3+4*i]<<"]"<<endl;
 			}
 			cout<<">---------------------------------------<"<<endl;
