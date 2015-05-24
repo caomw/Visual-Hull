@@ -8,7 +8,7 @@ A visual hull reconstruction result is shown as follows, the dataset is took fro
 
 **input** (one view)
 
-![Oops! I cannot find the image!](/images/i.png)
+![Oops! I cannot find the image!](/images/i.jpg)
 
 **output** (the position can be found by projecting the visual hull into the ground)
 
