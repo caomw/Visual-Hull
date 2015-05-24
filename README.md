@@ -4,7 +4,7 @@
 
 # Some results
 
-A visual hull reconstruction result is shown as follows, the dataset is from [4]:
+A visual hull reconstruction result is shown as follows, the dataset is took from [4]:
 
 **input** (one view)
 
