@@ -28,4 +28,4 @@ Conference, 2010: 964 ∼ 968.
 
 
 
-[homepage]: http://cvlab.epfl.ch/software/pom
+[homepage]: http://zhaozj89.github.io/Visual-Hull/
